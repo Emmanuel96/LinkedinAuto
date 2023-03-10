@@ -18,8 +18,8 @@ driver.get(url)
 # Automate email and password input
 email = driver.find_element(By.ID, "session_key")
 password = driver.find_element(By.ID, "session_password")
-email.send_keys("xoxxworld@gmail.com")
-password.send_keys("@s?XmJ-B5Rpb92u")
+email.send_keys("")
+password.send_keys()
 # wait
 time.sleep(10)
 # Submit credentials
