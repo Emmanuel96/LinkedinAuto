@@ -32,7 +32,7 @@ time.sleep(60)
 # Get search bar
 search = driver.find_element(By.CLASS_NAME, "search-global-typeahead__input")
 # add input
-search.send_keys("Python Engineer")
+search.send_keys("Python Developer")
 search.send_keys(Keys.ENTER)
 time.sleep(10)
 
@@ -51,11 +51,9 @@ for job in all_jobs:
     job.click()
     time.sleep(10)
     try:
-      apply_button = driver.find_element(By.CSS_SELECTOR, ".job-s-apply button")
+      apply_button = driver.find_element(By.CSS_SELECTOR, ".jobs-apply-button--top-card")
       apply_button.click()
       time.sleep(5)
-      phone = driver.find_element(By.CSS_SELECTOR, "fb-single-line-text__input")
-      phone.send_keys("08104394359")
       next = driver.find_element(By.CSS_SELECTOR, "footer button")
       next.click()
       time.sleep(5)
